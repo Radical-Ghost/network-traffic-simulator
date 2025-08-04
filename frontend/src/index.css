@@ -788,20 +788,3 @@ code {
 		grid-template-columns: 1fr;
 	}
 }
-
-.loading {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 200px;
-	color: #666;
-}
-
-.error {
-	background-color: #f8d7da;
-	color: #721c24;
-	padding: 15px;
-	border-radius: 4px;
-	margin: 20px 0;
-	border: 1px solid #f5c6cb;
-}
