@@ -1,8 +1,8 @@
 import React from "react";
 
 const NetworkVisualization = ({ nodes, links, packets }) => {
-	const svgWidth = 600;
-	const svgHeight = 400;
+	const svgWidth = 800;
+	const svgHeight = 550;
 
 	// Calculate link utilization color
 	const getLinkColor = (utilization) => {

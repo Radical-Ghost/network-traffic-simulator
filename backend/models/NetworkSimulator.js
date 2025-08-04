@@ -73,11 +73,11 @@ class NetworkSimulator {
 
 	getNodePosition(nodeId) {
 		const positions = {
-			A: { x: 100, y: 100 },
-			B: { x: 300, y: 100 },
-			C: { x: 200, y: 200 },
-			D: { x: 400, y: 200 },
-			E: { x: 300, y: 300 },
+			A: { x: 150, y: 130 },
+			B: { x: 400, y: 130 },
+			C: { x: 275, y: 275 },
+			D: { x: 550, y: 275 },
+			E: { x: 400, y: 420 },
 		};
 		return positions[nodeId] || { x: 0, y: 0 };
 	}
