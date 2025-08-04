@@ -9,19 +9,13 @@ const NetworkVisualization = ({ nodes, links, packets }) => {
 		if (utilization > 80) return "#e74c3c"; // Red for high utilization
 		if (utilization > 50) return "#f39c12"; // Orange for moderate utilization
 		return "#95a5a6"; // Gray for low utilization
-	};  
+	};
 
 	// Get link class based on utilization
 	const getLinkClass = (utilization) => {
 		if (utilization > 80) return "link congested";
 		if (utilization > 50) return "link moderate";
 		return "link";
-	};
-
-	// Calculate queue size indicator
-	const getQueueIndicator = (queueLength) => {
-		if (queueLength === 0) return "";
-		return `(${queueLength})`;
 	};
 
 	return (
@@ -141,17 +135,32 @@ const NetworkVisualization = ({ nodes, links, packets }) => {
 				})}
 			</svg>
 
-			<div style={{ marginTop: "10px", fontSize: "12px", color: "#666" }}>
-				<div>
-					<strong>Legend:</strong>
+			<div className="legend">
+				<div className="legend-title">Visualization Legend</div>
+				<div className="legend-item">
+					<div className="legend-color normal"></div>
+					<span>Normal Node (Queue ≤ 5)</span>
 				</div>
-				<div>• Circle color: Blue (normal), Red (high queue)</div>
-				<div>
-					• Link color: Gray (&lt;50%), Orange (50-80%), Red (&gt;80%
-					utilization)
+				<div className="legend-item">
+					<div className="legend-color congested"></div>
+					<span>Congested Node (Queue &gt; 5)</span>
 				</div>
-				<div>• Red dots: Packets in transit</div>
-				<div>• Q: Queue length at each node</div>
+				<div className="legend-item">
+					<div className="legend-color normal"></div>
+					<span>Low Utilization (&lt; 50%)</span>
+				</div>
+				<div className="legend-item">
+					<div className="legend-color moderate"></div>
+					<span>Moderate Utilization (50-80%)</span>
+				</div>
+				<div className="legend-item">
+					<div className="legend-color congested"></div>
+					<span>High Utilization (&gt; 80%)</span>
+				</div>
+				<div className="legend-item">
+					<div className="legend-color packet"></div>
+					<span>Packets in Transit</span>
+				</div>
 			</div>
 		</div>
 	);
