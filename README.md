@@ -2,12 +2,6 @@
 
 A real-time network traffic simulator built for telecom companies to visualize and analyze network performance with a 5-node topology.
 
-## 🚀 Live Demo
-
--   **Frontend**: [Deployed on Netlify/Vercel]
--   **Backend**: [Deployed on Heroku/Railway]
--   **Repository**: [GitHub Repository Link]
-
 ## 📋 Project Overview
 
 This project simulates network traffic in a telecommunications network with the following features:
