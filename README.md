@@ -166,12 +166,3 @@ git push heroku main
 **Name**: Soham Mandavkar  
 **Roll Number**: A754  
 **Email**: soham10098@gmail.com
-
----
-
-**Submission Details:**
-
--   Repository: [GitHub/GitLab Repository URL]
--   Live Application: [Deployed Application URL]
--   Documentation: This README file
--   Development Time: 3 hours as specified
