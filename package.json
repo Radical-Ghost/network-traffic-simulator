@@ -1,0 +1,32 @@
+{
+	"name": "network-traffic-simulator",
+	"version": "1.0.0",
+	"description": "Network Traffic Simulator for Telecom Company",
+	"main": "backend/server.js",
+	"scripts": {
+		"start": "node backend/server.js",
+		"dev": "concurrently \"npm run server\" \"npm run client\"",
+		"server": "cd backend && npm run dev",
+		"client": "cd frontend && npm start",
+		"build": "cd frontend && npm run build",
+		"install-deps": "cd backend && npm install && cd ../frontend && npm install",
+		"heroku-postbuild": "cd frontend && npm install && npm run build"
+	},
+	"keywords": [
+		"network",
+		"traffic",
+		"simulator",
+		"telecom",
+		"react",
+		"nodejs"
+	],
+	"author": "Your Name",
+	"license": "MIT",
+	"engines": {
+		"node": ">=14.0.0",
+		"npm": ">=6.0.0"
+	},
+	"devDependencies": {
+		"concurrently": "^7.6.0"
+	}
+}
