@@ -519,17 +519,17 @@ code {
 	text-align: center;
 	padding: 50px;
 	font-size: 1.2rem;
-	background: rgba(255, 255, 255, 0.95);
+	background: rgba(30, 30, 50, 0.9);
 	backdrop-filter: blur(10px);
 	border-radius: 15px;
 	margin: 20px auto;
 	max-width: 500px;
-	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-	border: 1px solid rgba(255, 255, 255, 0.2);
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+	border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .loading {
-	color: #3498db;
+	color: #64b5f6;
 	position: relative;
 }
 
@@ -540,7 +540,7 @@ code {
 	top: 50%;
 	width: 20px;
 	height: 20px;
-	border: 2px solid #3498db;
+	border: 2px solid #64b5f6;
 	border-top: 2px solid transparent;
 	border-radius: 50%;
 	animation: spin 1s linear infinite;
@@ -556,8 +556,8 @@ code {
 }
 
 .error {
-	color: #e74c3c;
-	border-left: 4px solid #e74c3c;
+	color: #ff6b6b;
+	border-left: 4px solid #ff6b6b;
 }
 
 /* Network Visualization Styles */
