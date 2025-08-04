@@ -132,30 +132,6 @@ git commit -m "Deploy to production"
 git push heroku main
 ```
 
-## 🧪 Testing
-
-### Manual Testing Scenarios
-
-1. **Normal Operation**: Default settings, verify packet flow
-2. **Congestion**: Increase traffic rates, observe queue buildup
-3. **Link Failure**: Reduce link capacity to 1, test routing
-4. **High Load**: Set all nodes to maximum traffic rate
-
-### Performance Benchmarks
-
--   **Packet Processing**: 1000+ packets/second
--   **Real-time Updates**: 1-second intervals
--   **Memory Usage**: < 100MB for simulation
--   **CPU Usage**: < 5% on modern hardware
-
-## 🚀 Future Enhancements
-
-1. **Advanced Routing**: Implement OSPF or BGP protocols
-2. **Link Failures**: Simulate network outages and recovery
-3. **Quality of Service**: Priority queuing for different packet types
-4. **Historical Data**: Store and analyze long-term trends
-5. **Mobile Support**: Responsive design for mobile devices
-
 ## 📝 Assignment Requirements Checklist
 
 ✅ **Simulation Engine (Backend)**
