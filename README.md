@@ -22,7 +22,13 @@ This project simulates network traffic in a telecommunications network with the 
 -   **Real-time Communication**: WebSocket connections
 -   **Algorithm**: Shortest path routing (Floyd-Warshall)
 
-## 🏗️ Architecture
+## � Demo Video
+
+Watch the Network Traffic Simulator in action:
+
+https://github.com/Radical-Ghost/network-traffic-simulator/assets/recording.mp4
+
+## �🏗️ Architecture
 
 ### Backend Components
 
@@ -38,6 +44,8 @@ This project simulates network traffic in a telecommunications network with the 
 3. **SimulationControls**: Interactive simulation controls
 4. **StatsPanel**: Real-time performance metrics
 5. **NodeInfo**: Detailed node information
+
+##
 
 ## 🛠️ Installation & Setup
 
@@ -155,7 +163,48 @@ git push heroku main
 -   Congestion control
 -   Queue management
 
-## 👨‍💻 Developer Information
+## � Deployment
+
+### Heroku Backend Deployment
+
+1. **Create Heroku Account** and install Heroku CLI
+2. **Login to Heroku**:
+
+    ```bash
+    heroku login
+    ```
+
+3. **Deploy Backend**:
+    ```bash
+    cd backend
+    heroku create your-network-simulator-backend
+    heroku config:set NODE_ENV=production
+    git add .
+    git commit -m "Deploy to Heroku"
+    git push heroku main
+    ```
+
+### Netlify Frontend Deployment
+
+1. **Create Netlify Account** and install Netlify CLI
+2. **Build and Deploy**:
+
+    ```bash
+    cd frontend
+    npm run build
+    netlify login
+    netlify deploy --prod --dir=build
+    ```
+
+3. **Environment Variables**:
+    - Set `REACT_APP_BACKEND_URL` to your Heroku app URL in Netlify dashboard
+
+### Production URLs
+
+-   **Backend**: `https://your-network-simulator-backend.herokuapp.com`
+-   **Frontend**: `https://your-app-name.netlify.app`
+
+## �👨‍💻 Developer Information
 
 **Name**: Soham Mandavkar  
 **Roll Number**: A754  
