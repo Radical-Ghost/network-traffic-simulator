@@ -26,7 +26,7 @@ This project simulates network traffic in a telecommunications network with the 
 
 Watch the Network Traffic Simulator in action:
 
-https://github.com/Radical-Ghost/network-traffic-simulator/assets/recording.mp4
+https://github.com/Radical-Ghost/network-traffic-simulator/recording.mp4
 
 ## �🏗️ Architecture
 
@@ -209,3 +209,4 @@ git push heroku main
 **Name**: Soham Mandavkar  
 **Roll Number**: A754  
 **Email**: soham10098@gmail.com
+
