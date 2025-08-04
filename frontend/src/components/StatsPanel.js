@@ -69,7 +69,13 @@ const StatsPanel = ({ stats }) => {
 				</span>
 			</div>
 
-			<div style={{ marginTop: "15px", fontSize: "11px", color: "#666" }}>
+			<div
+				style={{
+					marginTop: "15px",
+					fontSize: "16px",
+					color: "#b8b8b8",
+					fontWeight: "500",
+				}}>
 				<div>
 					<strong>Performance Indicators:</strong>
 				</div>

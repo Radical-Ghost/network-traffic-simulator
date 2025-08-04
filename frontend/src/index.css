@@ -411,7 +411,7 @@ code {
 	font-weight: 600;
 	color: #e8e8e8;
 	margin-bottom: 10px;
-	font-size: 14px;
+	font-size: 16px;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 }
@@ -420,8 +420,8 @@ code {
 	display: flex;
 	align-items: center;
 	margin-bottom: 8px;
-	font-size: 13px;
-	color: #b0b0b0;
+	font-size: 15px;
+	color: #c0c0c0;
 }
 
 .node-legend-color {
@@ -499,13 +499,13 @@ code {
 }
 
 .status-running {
-	background: linear-gradient(45deg, #27ae60, #2ecc71);
-	box-shadow: 0 0 20px rgba(39, 174, 96, 0.5);
+	background: linear-gradient(45deg, #00c851, #00e676);
+	box-shadow: 0 0 20px rgba(0, 200, 81, 0.5);
 }
 
 .status-paused {
-	background: linear-gradient(45deg, #f39c12, #e67e22);
-	box-shadow: 0 0 20px rgba(243, 156, 18, 0.5);
+	background: linear-gradient(45deg, #ffc107, #ffeb3b);
+	box-shadow: 0 0 20px rgba(255, 193, 7, 0.5);
 }
 
 .status-stopped {
@@ -636,7 +636,7 @@ code {
 	font-weight: 600;
 	color: #e8e8e8;
 	margin-bottom: 10px;
-	font-size: 14px;
+	font-size: 16px;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 }
@@ -645,8 +645,8 @@ code {
 	display: flex;
 	align-items: center;
 	margin-bottom: 8px;
-	font-size: 13px;
-	color: #b0b0b0;
+	font-size: 15px;
+	color: #c0c0c0;
 }
 
 .legend-color {
