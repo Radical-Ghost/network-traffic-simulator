@@ -96,18 +96,6 @@ npm start
 -   **Packet Loss**: Loss percentage
 -   **Average Latency**: Mean packet delivery time
 
-## 🔧 Configuration
-
-### Environment Variables
-
-```bash
-# Frontend (.env)
-REACT_APP_BACKEND_URL=http://localhost:3001
-
-# Backend (.env)
-PORT=3001
-```
-
 ### Simulation Parameters
 
 -   Traffic generation rates: 0-20 packets/second
@@ -115,24 +103,7 @@ PORT=3001
 -   Maximum queue size: 10 packets per node
 -   Simulation step interval: 1 second
 
-## 📦 Deployment
 
-### Frontend (Netlify/Vercel)
-
-```bash
-npm run build
-# Deploy build folder
-```
-
-### Backend (Heroku/Railway)
-
-```bash
-# Add Procfile
-echo "web: node server.js" > Procfile
-git add .
-git commit -m "Deploy to production"
-git push heroku main
-```
 
 ## 📝 Assignment Requirements Checklist
 
@@ -162,47 +133,6 @@ git push heroku main
 -   Network load calculation
 -   Congestion control
 -   Queue management
-
-## � Deployment
-
-### Heroku Backend Deployment
-
-1. **Create Heroku Account** and install Heroku CLI
-2. **Login to Heroku**:
-
-    ```bash
-    heroku login
-    ```
-
-3. **Deploy Backend**:
-    ```bash
-    cd backend
-    heroku create your-network-simulator-backend
-    heroku config:set NODE_ENV=production
-    git add .
-    git commit -m "Deploy to Heroku"
-    git push heroku main
-    ```
-
-### Netlify Frontend Deployment
-
-1. **Create Netlify Account** and install Netlify CLI
-2. **Build and Deploy**:
-
-    ```bash
-    cd frontend
-    npm run build
-    netlify login
-    netlify deploy --prod --dir=build
-    ```
-
-3. **Environment Variables**:
-    - Set `REACT_APP_BACKEND_URL` to your Heroku app URL in Netlify dashboard
-
-### Production URLs
-
--   **Backend**: `https://your-network-simulator-backend.herokuapp.com`
--   **Frontend**: `https://your-app-name.netlify.app`
 
 ## �👨‍💻 Developer Information
 
